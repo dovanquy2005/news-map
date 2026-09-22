@@ -1,7 +1,7 @@
 # TASK-022 — Event & Entity Extraction Worker
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

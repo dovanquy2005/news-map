@@ -1,7 +1,7 @@
 # TASK-034 — Public Events Search API (GET /api/v1/events/search)
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

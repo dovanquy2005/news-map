@@ -1,7 +1,7 @@
 # TASK-015 — SSRF-Safe HTTP Client & Fetch Policy
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -78,10 +78,10 @@ Implement a hardened, centralized HTTP fetch client for news crawling and feed i
 - `tests/security/test_ssrf_protection.py`
 
 ## Acceptance Criteria
-- [ ] Centralized fetch client blocks all private, loopback, and cloud metadata IPs.
-- [ ] Redirect validation prevents SSRF via redirect evasion.
-- [ ] Domain allowlist checks enforce adherence to registered source domains.
-- [ ] Automated security tests pass 100% of negative SSRF test cases.
+- [x] Centralized fetch client blocks all private, loopback, and cloud metadata IPs.
+- [x] Redirect validation prevents SSRF via redirect evasion.
+- [x] Domain allowlist checks enforce adherence to registered source domains.
+- [x] Automated security tests pass 100% of negative SSRF test cases.
 
 ## Completion Report
 When completed, report:

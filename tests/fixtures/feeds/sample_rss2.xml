@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>VnExpress - Tin mới nhất</title>
+    <link>https://vnexpress.net</link>
+    <description>VnExpress - Báo tiếng Việt nhiều người xem nhất</description>
+    <item>
+      <title>Hà Nội khánh thành hầm chui nút giao Kim Đồng</title>
+      <link>https://vnexpress.net/ha-noi-khanh-thanh-ham-chui-kim-dong-4812345.html?utm_source=rss</link>
+      <description><![CDATA[<p>Hầm chui Kim Đồng - Giải Phóng dài hơn 400m thông xe sau hơn 2 năm thi công.</p>]]></description>
+      <pubDate>Mon, 16 Mar 2026 09:00:00 +0700</pubDate>
+      <guid>https://vnexpress.net/ha-noi-khanh-thanh-ham-chui-kim-dong-4812345.html</guid>
+      <media:content url="https://i1-vnexpress.vnecdn.net/2026/03/16/ham-chui.jpg" medium="image"/>
+    </item>
+    <item>
+      <title>Giá vàng trong nước vượt mốc 90 triệu đồng</title>
+      <link>https://vnexpress.net/gia-vang-trong-nuoc-vuot-moc-90-trieu-4812346.html</link>
+      <description>Giá vàng miếng SJC tiếp tục tăng mạnh trong phiên giao dịch đầu tuần.</description>
+      <pubDate>Mon, 16 Mar 2026 10:15:00 GMT</pubDate>
+      <guid>https://vnexpress.net/gia-vang-trong-nuoc-vuot-moc-90-trieu-4812346.html</guid>
+    </item>
+  </channel>
+</rss>

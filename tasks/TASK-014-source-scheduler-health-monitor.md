@@ -1,7 +1,7 @@
 # TASK-014 — Source Polling Scheduler & Health Monitor
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -79,10 +79,10 @@ Implement the periodic source polling scheduler that dispatches fetch jobs to th
 - `tests/integration/test_scheduler_queue.py`
 
 ## Acceptance Criteria
-- [ ] Scheduler runs periodically and pushes jobs to `ingestion_queue` without blocking.
-- [ ] Jitter correctly disperses job schedule times.
-- [ ] Consecutive failures trigger the circuit breaker backoff mechanism.
-- [ ] Distributed locking prevents duplicate job dispatch when multiple worker pods run.
+- [x] Scheduler runs periodically and pushes jobs to `ingestion_queue` without blocking.
+- [x] Jitter correctly disperses job schedule times.
+- [x] Consecutive failures trigger the circuit breaker backoff mechanism.
+- [x] Distributed locking prevents duplicate job dispatch when multiple worker pods run.
 
 ## Completion Report
 When completed, report:

@@ -1,7 +1,7 @@
 # TASK-037 — Event Quick Popup & Mobile Bottom Sheet Preview
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

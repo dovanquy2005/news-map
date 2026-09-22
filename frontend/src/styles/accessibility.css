@@ -1,0 +1,54 @@
+/* ==============================================================================
+   Vietnam News Map — Accessibility & WCAG AA Styles
+   Complies with TASK-041
+   ============================================================================== */
+
+/* Skip To Main Content Link */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 16px;
+  background: var(--brand-blue);
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  z-index: 9999;
+  text-decoration: none;
+  box-shadow: var(--shadow-lg);
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+/* Screen Reader Only Utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* High Visibility Keyboard Focus Ring */
+*:focus-visible {
+  outline: 2px solid var(--border-focus) !important;
+  outline-offset: 2px !important;
+}
+
+/* High Contrast Mode Adjustments */
+@media (forced-colors: active) {
+  .news-map-marker-pin,
+  .news-map-cluster-bubble,
+  .category-badge,
+  .btn-primary {
+    border: 2px solid CanvasText;
+  }
+}

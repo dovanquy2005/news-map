@@ -1,7 +1,7 @@
 # TASK-033 — Public Event Detail API (GET /api/v1/events/{eventId})
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

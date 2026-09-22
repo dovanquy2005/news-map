@@ -1,0 +1,38 @@
+[
+  {
+    "id": "eeeeeee1-1111-1111-1111-111111111111",
+    "title": "Khởi công dự án Metro số 2 Nam Thăng Long - Trần Hưng Đạo",
+    "summary": "Dự án đường sắt đô thị số 2 Hà Nội chính thức khởi công ngày 15/03/2026 với chiều dài 11,5 km kết nối trung tâm thủ đô.",
+    "category": "INFRASTRUCTURE",
+    "status": "PUBLISHED",
+    "confidence_score": 0.95,
+    "source_count": 3,
+    "first_seen_at": "2026-03-15T08:30:00Z",
+    "last_updated_at": "2026-03-15T12:00:00Z",
+    "location": {
+      "name": "Nam Thăng Long, Hà Nội",
+      "latitude": 21.0667,
+      "longitude": 105.7833,
+      "admin_level_1": "Hà Nội",
+      "admin_level_2": "Bắc Từ Liêm"
+    }
+  },
+  {
+    "id": "eeeeeee2-2222-2222-2222-222222222222",
+    "title": "Khánh thành và thông xe cầu Thủ Thiêm 4 tại TP.HCM",
+    "summary": "Cầu Thủ Thiêm 4 kết nối TP Thủ Đức và Quận 7 dài hơn 2,1 km chính thức đưa vào khai thác thương mại.",
+    "category": "INFRASTRUCTURE",
+    "status": "PUBLISHED",
+    "confidence_score": 0.92,
+    "source_count": 2,
+    "first_seen_at": "2026-03-15T10:00:00Z",
+    "last_updated_at": "2026-03-15T14:30:00Z",
+    "location": {
+      "name": "Quận 7, TP. Hồ Chí Minh",
+      "latitude": 10.7489,
+      "longitude": 106.7262,
+      "admin_level_1": "Hồ Chí Minh",
+      "admin_level_2": "Quận 7"
+    }
+  }
+]

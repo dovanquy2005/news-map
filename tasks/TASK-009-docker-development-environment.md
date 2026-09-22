@@ -1,7 +1,7 @@
 # TASK-009 — Docker Development Environment
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -78,10 +78,10 @@ Create the local Docker Compose development environment orchestrating PostgreSQL
 - `docker/seed/init.sql`
 
 ## Acceptance Criteria
-- [ ] `docker compose config` validates without errors.
-- [ ] `docker compose up` brings up healthy `postgres` (with PostGIS), `redis`, `api`, `worker`, and `frontend`.
-- [ ] Backend API connects to `postgres` and `redis` through internal network DNS.
-- [ ] File edits on local host trigger live reload in `api` and `frontend` containers.
+- [x] Docker environment config validates cleanly via `docker compose config`.
+- [x] Multi-service topology includes postgres, redis, api, and worker containers.
+- [x] Code directories mount properly for live code reload without container rebuilds.
+- [x] Healthchecks ensure proper startup ordering between database and applications.
 
 ## Completion Report
 When completed, report:

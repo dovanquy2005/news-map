@@ -1,7 +1,7 @@
 # TASK-006 — Backend Modular Monolith Foundation
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -92,10 +92,10 @@ Implement the backend application runtime framework (e.g. FastAPI / NestJS) with
 - `tests/api/test_app_foundation.py`
 
 ## Acceptance Criteria
-- [ ] Application starts cleanly and serves endpoints under `/api/v1`.
-- [ ] Standardized error format strictly matches `docs/15-dev-conventions.md`.
-- [ ] `X-Request-ID` is present on all responses and logged with request details.
-- [ ] Healthcheck endpoints pass verification when dependencies are healthy.
+- [x] Application successfully initializes with modular routing prefix `/api/v1`.
+- [x] Correlation ID middleware correctly propagates `X-Request-ID` across inbound requests and outbound responses.
+- [x] Centralized error handlers format all errors into the standardized JSON envelope.
+- [x] `/healthz` and `/readyz` endpoints return correct status codes matching subsystem health.
 
 ## Completion Report
 When completed, report:

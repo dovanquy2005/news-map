@@ -1,7 +1,7 @@
 # TASK-004 — Base Database Entity Models & Repositories
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -88,10 +88,10 @@ Define the core relational and geospatial database schema models, relationships,
 - `tests/integration/test_entity_schema.py`
 
 ## Acceptance Criteria
-- [ ] All 9 core entities from `docs/04-data-architecture.md` are defined with typed models and migrations.
-- [ ] Unique constraints and indexes (especially GiST on `geom`) are verified in the database schema.
-- [ ] Database test verifies creating an event with attached articles, facts, and timeline items in a single transaction.
-- [ ] All timestamps use `TIMESTAMPTZ` and default to UTC.
+- [x] All 9 core entities from `docs/04-data-architecture.md` are defined with typed models and migrations.
+- [x] Unique constraints and indexes (especially GiST on `geom`) are verified in the database schema.
+- [x] Database test verifies creating an event with attached articles, facts, and timeline items in a single transaction.
+- [x] All timestamps use `TIMESTAMPTZ` and default to UTC.
 
 ## Completion Report
 When completed, report:

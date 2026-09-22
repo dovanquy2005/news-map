@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Tin nóng Tuổi Trẻ</title>
+  <link href="https://tuoitre.vn"/>
+  <updated>2026-03-16T08:00:00Z</updated>
+  <id>urn:uuid:tuoitre-feed-001</id>
+  <entry>
+    <title>Cảnh báo mưa lớn diện rộng tại các tỉnh miền Trung</title>
+    <link href="https://tuoitre.vn/canh-bao-mua-lon-mien-trung-202603160800.htm"/>
+    <id>tag:tuoitre.vn,2026:mua-lon-mien-trung</id>
+    <updated>2026-03-16T08:00:00Z</updated>
+    <summary>Trung tâm Khí tượng Thủy văn quốc gia phát đi bản tin cảnh báo lũ quét và sạt lở đất.</summary>
+    <author>
+      <name>Đức Tuyên</name>
+    </author>
+  </entry>
+</feed>

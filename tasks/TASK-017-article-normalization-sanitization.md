@@ -1,7 +1,7 @@
 # TASK-017 — Article Normalization & Sanitization
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -89,11 +89,11 @@ Implement the article data normalization and sanitization pipeline that cleans r
 - `tests/unit/test_article_normalizer.py`
 
 ## Acceptance Criteria
-- [ ] Tracking query parameters are completely stripped from canonical URLs.
-- [ ] All article timestamps are accurately normalized to UTC.
-- [ ] Raw HTML tags are safely stripped from titles and excerpts.
-- [ ] Vietnamese diacritics and Unicode characters are preserved without corruption.
-- [ ] Unit tests pass 100% of sanitization and canonicalization test cases.
+- [x] Tracking query parameters are completely stripped from canonical URLs.
+- [x] All article timestamps are accurately normalized to UTC.
+- [x] Raw HTML tags are safely stripped from titles and excerpts.
+- [x] Vietnamese diacritics and Unicode characters are preserved without corruption.
+- [x] Unit tests pass 100% of sanitization and canonicalization test cases.
 
 ## Completion Report
 When completed, report:

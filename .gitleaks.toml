@@ -1,0 +1,21 @@
+title = "gitleaks config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Global allowlist for testing and example templates"
+paths = [
+  '''^\.env\.example$''',
+  '''^backend/\.env\.example$''',
+  '''^workers/\.env\.example$''',
+  '''^frontend/\.env\.example$''',
+  '''^tests/fixtures/.*$''',
+  '''^tests/.*test_.*\.py$''',
+]
+regexes = [
+  '''vnm_password''',
+  '''testing-secret-key''',
+  '''postgres:postgres''',
+  '''mock_api_key''',
+]

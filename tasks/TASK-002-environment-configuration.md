@@ -1,7 +1,7 @@
 # TASK-002 — Environment Configuration & Secret Management Scheme
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -73,10 +73,10 @@ Implement a unified, typed configuration management layer across backend and wor
 - `tests/unit/test_config.py`
 
 ## Acceptance Criteria
-- [ ] Application fails fast on launch if required configuration keys are missing.
-- [ ] `.env.example` covers 100% of required runtime variables with clear instructions.
-- [ ] Secrets masking functions properly mask passwords and keys in log outputs.
-- [ ] Frontend config schema strictly prevents server-only secrets from bundling.
+- [x] Application fails fast on launch if required configuration keys are missing.
+- [x] `.env.example` covers 100% of required runtime variables with clear instructions.
+- [x] Secrets masking functions properly mask passwords and keys in log outputs.
+- [x] Frontend config schema strictly prevents server-only secrets from bundling.
 
 ## Completion Report
 When completed, report:

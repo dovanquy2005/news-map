@@ -1,0 +1,131 @@
+name: CI Quality Gates
+
+on:
+  push:
+    branches: [main, staging]
+  pull_request:
+    branches: [main, staging]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-and-typecheck:
+    name: Lint & Typecheck
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install Linting Tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8 mypy
+
+      - name: Run Flake8 Lint Check
+        run: |
+          flake8 backend workers --count --select=E9,F63,F7,F82 --show-source --statistics
+          flake8 backend workers --count --exit-zero --max-complexity=10 --max-line-length=120 --statistics
+
+  test-backend:
+    name: Backend Unit & Integration Tests
+    runs-on: ubuntu-22.04
+
+    services:
+      postgres:
+        image: postgis/postgis:16-3.5
+        env:
+          POSTGRES_USER: vnm_user
+          POSTGRES_PASSWORD: vnm_password
+          POSTGRES_DB: vnm_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 5
+
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      APP_ENV: testing
+      DATABASE_URL: postgresql://vnm_user:vnm_password@localhost:5432/vnm_test
+      REDIS_URL: redis://localhost:6379/0
+      ADMIN_JWT_SECRET: testing-secret-key-that-is-at-least-32-chars-long
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+          pip install pytest pytest-cov
+
+      - name: Run Database Migrations
+        run: |
+          alembic upgrade head
+
+      - name: Run Test Suite
+        run: |
+          python scripts/run_tests.py --all
+
+  test-frontend:
+    name: Frontend Build & Validation
+    runs-on: ubuntu-22.04
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+          cache-dependency-path: frontend/package.json
+
+      - name: Install Frontend Dependencies
+        run: npm ci || npm install
+
+      - name: Build Frontend Bundle
+        run: npm run build
+
+  security-scan:
+    name: Secret & Vulnerability Scan
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Gitleaks Secret Scanner
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

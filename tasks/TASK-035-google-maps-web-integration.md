@@ -1,7 +1,7 @@
 # TASK-035 — Google Maps Web Integration & Viewport Bounds Synchronizer
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

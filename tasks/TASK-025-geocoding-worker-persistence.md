@@ -1,7 +1,7 @@
 # TASK-025 — Geocoding Worker & Location Persistence
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

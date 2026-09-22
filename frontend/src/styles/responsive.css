@@ -1,0 +1,127 @@
+/* ==============================================================================
+   Vietnam News Map — Responsive Layout Engine
+   Strictly complies with docs/08-ui-ux-responsive.md and TASK-041
+   ============================================================================== */
+
+/* Mobile Breakpoint: 360px - 767px */
+@media (max-width: 767px) {
+  :root {
+    --header-height: 56px;
+    --side-panel-width: 100%;
+    --detail-panel-width: 100%;
+  }
+
+  .filter-bar-desktop {
+    display: none !important;
+  }
+
+  /* Split layout on mobile converts to tab view or bottom dock */
+  .feed-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 55vh;
+    border-left: none;
+    border-top: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    box-shadow: var(--shadow-sheet);
+    z-index: 35;
+    transition: transform var(--transition-spring);
+  }
+
+  .feed-panel.mobile-collapsed {
+    transform: translateY(calc(100% - 48px));
+  }
+
+  .mobile-tab-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    cursor: pointer;
+  }
+
+  .mobile-tab-handle {
+    width: 38px;
+    height: 4px;
+    background: #cbd5e1;
+    border-radius: var(--radius-full);
+  }
+
+  .event-detail-drawer {
+    max-width: 100% !important;
+    border-radius: 0;
+  }
+
+  .event-quick-popup {
+    display: none !important; /* On mobile, replaced by bottom sheet */
+  }
+
+  /* Minimum touch target for mobile */
+  button, .category-chip, .filter-select, .source-card-item {
+    min-height: 44px;
+  }
+}
+
+/* Tablet Breakpoint: 768px - 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --side-panel-width: 360px;
+    --detail-panel-width: 420px;
+  }
+
+  .feed-panel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 30;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.08);
+    transition: transform var(--transition-spring);
+  }
+
+  .feed-panel.tablet-collapsed {
+    transform: translateX(100%);
+  }
+
+  .tablet-feed-toggle-btn {
+    position: absolute;
+    left: -40px;
+    top: 16px;
+    width: 40px;
+    height: 40px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-right: none;
+    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+    box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+  }
+}
+
+/* Desktop Breakpoint: >= 1024px */
+@media (min-width: 1024px) {
+  .feed-panel {
+    position: relative;
+    display: flex;
+  }
+
+  .mobile-bottom-sheet {
+    display: none !important;
+  }
+}
+
+/* Wide Desktop Breakpoint: >= 1440px */
+@media (min-width: 1440px) {
+  :root {
+    --side-panel-width: 480px;
+    --detail-panel-width: 520px;
+  }
+}

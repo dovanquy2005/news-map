@@ -1,7 +1,7 @@
 # TASK-026 — Event Clustering: Candidate Retrieval Service
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

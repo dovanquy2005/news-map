@@ -1,7 +1,7 @@
 # TASK-020 — NLP Extraction Prompt Engineering & LLM Client
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -77,10 +77,10 @@ Implement the LLM abstraction client and hardened extraction prompt templates th
 - `tests/unit/test_prompt_injection.py`
 
 ## Acceptance Criteria
-- [ ] LLM client cleanly requests structured JSON output from provider API.
-- [ ] System prompt enforces strict prompt injection isolation for all article content.
-- [ ] Token and cost tracking accurately logs usage metrics.
-- [ ] Response caching avoids redundant API calls for previously processed articles.
+- [x] LLM client cleanly requests structured JSON output from provider API.
+- [x] System prompt enforces strict prompt injection isolation for all article content.
+- [x] Token and cost tracking accurately logs usage metrics.
+- [x] Response caching avoids redundant API calls for previously processed articles.
 
 ## Completion Report
 When completed, report:

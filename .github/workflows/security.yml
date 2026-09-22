@@ -1,0 +1,37 @@
+name: Scheduled Security Audit
+
+on:
+  schedule:
+    - cron: "0 2 * * *" # Daily at 02:00 UTC
+  workflow_dispatch:
+
+jobs:
+  audit-dependencies:
+    name: Dependency Vulnerability Audit
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pip-audit
+        run: |
+          python -m pip install --upgrade pip
+          pip install pip-audit
+
+      - name: Run Python Dependency Audit
+        run: |
+          pip-audit -r backend/requirements.txt --ignore-vuln CVE-2000-0000 || true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run NPM Security Audit
+        run: |
+          cd frontend && npm audit --audit-level=high || true

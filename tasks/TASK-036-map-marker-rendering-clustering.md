@@ -1,7 +1,7 @@
 # TASK-036 — Map Marker Rendering & Dynamic Marker Clustering
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
