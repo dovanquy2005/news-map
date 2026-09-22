@@ -50,47 +50,47 @@ Phase 3: Text-to-Speech (TTS) (5 tasks)
 
 | ID | Task Title | Phase | Priority | Depends On | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| [TASK-001](file:///d:/news-map/tasks/TASK-001-project-bootstrap.md) | Repository Bootstrap & Monorepo Structure | Phase 0 — Foundation | P0 | - | TODO |
-| [TASK-002](file:///d:/news-map/tasks/TASK-002-environment-configuration.md) | Environment Configuration & Secret Management Scheme | Phase 0 — Foundation | P0 | TASK-001 | TODO |
-| [TASK-003](file:///d:/news-map/tasks/TASK-003-database-foundation.md) | Database Foundation (PostgreSQL + PostGIS + pgvector Setup) | Phase 0 — Foundation | P0 | TASK-001, TASK-002 | TODO |
-| [TASK-004](file:///d:/news-map/tasks/TASK-004-database-entities-repositories.md) | Base Database Entity Models & Repositories | Phase 0 — Foundation | P0 | TASK-003 | TODO |
-| [TASK-005](file:///d:/news-map/tasks/TASK-005-redis-queue-foundation.md) | Redis Configuration & Queue Foundation | Phase 0 — Foundation | P0 | TASK-001, TASK-002 | TODO |
-| [TASK-006](file:///d:/news-map/tasks/TASK-006-backend-modular-monolith-foundation.md) | Backend Modular Monolith Foundation | Phase 0 — Foundation | P0 | TASK-001, TASK-002, TASK-003, TASK-005 | TODO |
-| [TASK-007](file:///d:/news-map/tasks/TASK-007-worker-runtime-foundation.md) | Worker Runtime Foundation | Phase 0 — Foundation | P0 | TASK-002, TASK-003, TASK-004, TASK-005 | TODO |
-| [TASK-008](file:///d:/news-map/tasks/TASK-008-frontend-responsive-foundation.md) | Frontend Application Foundation (Responsive Web Shell) | Phase 0 — Foundation | P0 | TASK-001, TASK-002 | TODO |
-| [TASK-009](file:///d:/news-map/tasks/TASK-009-docker-development-environment.md) | Docker Development Environment | Phase 0 — Foundation | P0 | TASK-001, TASK-002, TASK-003, TASK-005 | TODO |
-| [TASK-010](file:///d:/news-map/tasks/TASK-010-observability-foundation.md) | Observability Foundation (Structured Logging & Metrics) | Phase 0 — Foundation | P0 | TASK-001, TASK-002, TASK-006, TASK-007 | TODO |
-| [TASK-011](file:///d:/news-map/tasks/TASK-011-testing-harness-foundation.md) | Testing Harness & QA Foundation | Phase 0 — Foundation | P0 | TASK-001, TASK-003, TASK-004, TASK-005, TASK-006 | TODO |
-| [TASK-012](file:///d:/news-map/tasks/TASK-012-cicd-pipeline-gates.md) | CI/CD Pipeline & Quality Gates | Phase 0 — Foundation | P0 | TASK-001, TASK-009, TASK-010, TASK-011 | TODO |
-| [TASK-013](file:///d:/news-map/tasks/TASK-013-source-management-domain.md) | Source Management Domain & Registry | Phase 1 — News Ingestion | P0 | TASK-004, TASK-006 | TODO |
-| [TASK-014](file:///d:/news-map/tasks/TASK-014-source-scheduler-health-monitor.md) | Source Polling Scheduler & Health Monitor | Phase 1 — News Ingestion | P0 | TASK-005, TASK-007, TASK-010, TASK-013 | TODO |
-| [TASK-015](file:///d:/news-map/tasks/TASK-015-ssrf-safe-http-client.md) | SSRF-Safe HTTP Client & Fetch Policy | Phase 1 — News Ingestion | P0 | TASK-002, TASK-010, TASK-013 | TODO |
-| [TASK-016](file:///d:/news-map/tasks/TASK-016-rss-feed-adapter.md) | RSS & Feed Adapter Implementation | Phase 1 — News Ingestion | P0 | TASK-013, TASK-015 | TODO |
-| [TASK-017](file:///d:/news-map/tasks/TASK-017-article-normalization-sanitization.md) | Article Normalization & Sanitization | Phase 1 — News Ingestion | P0 | TASK-004, TASK-016 | TODO |
-| [TASK-018](file:///d:/news-map/tasks/TASK-018-article-deduplication-engine.md) | Article Deduplication Engine | Phase 1 — News Ingestion | P0 | TASK-004, TASK-017 | TODO |
-| [TASK-019](file:///d:/news-map/tasks/TASK-019-article-ingestion-worker-pipeline.md) | Article Ingestion Worker & Pipeline Integration | Phase 1 — News Ingestion | P0 | TASK-005, TASK-007, TASK-010, TASK-013, TASK-014, TASK-015, TASK-016, TASK-017, TASK-018 | TODO |
-| [TASK-020](file:///d:/news-map/tasks/TASK-020-nlp-extraction-prompt-client.md) | NLP Extraction Prompt Engineering & LLM Client | Phase 1 — Intelligence Pipeline | P0 | TASK-002, TASK-006, TASK-010 | TODO |
-| [TASK-021](file:///d:/news-map/tasks/TASK-021-event-extraction-schema-validation.md) | Event & Entity Extraction Schema Validation | Phase 1 — Intelligence Pipeline | P0 | TASK-020 | TODO |
-| [TASK-022](file:///d:/news-map/tasks/TASK-022-event-extraction-worker.md) | Event & Entity Extraction Worker | Phase 1 — Intelligence Pipeline | P0 | TASK-005, TASK-007, TASK-010, TASK-019, TASK-020, TASK-021 | TODO |
-| [TASK-023](file:///d:/news-map/tasks/TASK-023-location-extraction-normalization.md) | Location Extraction & Hierarchical Normalization | Phase 1 — Intelligence Pipeline | P0 | TASK-021, TASK-022 | TODO |
-| [TASK-024](file:///d:/news-map/tasks/TASK-024-geocoding-adapter-spatial-resolution.md) | Geocoding Adapter & Spatial Resolution Service | Phase 1 — Intelligence Pipeline | P0 | TASK-002, TASK-023 | TODO |
-| [TASK-025](file:///d:/news-map/tasks/TASK-025-geocoding-worker-persistence.md) | Geocoding Worker & Location Persistence | Phase 1 — Intelligence Pipeline | P0 | TASK-004, TASK-005, TASK-007, TASK-022, TASK-023, TASK-024 | TODO |
-| [TASK-026](file:///d:/news-map/tasks/TASK-026-clustering-candidate-retrieval.md) | Event Clustering: Candidate Retrieval Service | Phase 1 — Intelligence Pipeline | P0 | TASK-004, TASK-021, TASK-025 | TODO |
-| [TASK-027](file:///d:/news-map/tasks/TASK-027-clustering-similarity-scoring.md) | Event Clustering: Multi-Signal Similarity & Scoring | Phase 1 — Intelligence Pipeline | P0 | TASK-021, TASK-026 | TODO |
-| [TASK-028](file:///d:/news-map/tasks/TASK-028-clustering-worker-provenance.md) | Event Clustering Worker & Provenance Persistence | Phase 1 — Intelligence Pipeline | P0 | TASK-004, TASK-005, TASK-007, TASK-022, TASK-025, TASK-026, TASK-027 | TODO |
-| [TASK-029](file:///d:/news-map/tasks/TASK-029-event-facts-timeline-worker.md) | Event Facts & Timeline Extraction Worker | Phase 1 — Intelligence Pipeline | P0 | TASK-004, TASK-028 | TODO |
-| [TASK-030](file:///d:/news-map/tasks/TASK-030-event-summary-generator.md) | Event Summary Generator | Phase 1 — Intelligence Pipeline | P0 | TASK-020, TASK-028, TASK-029 | TODO |
-| [TASK-031](file:///d:/news-map/tasks/TASK-031-event-confidence-scoring.md) | Event Confidence Scoring Engine | Phase 1 — Intelligence Pipeline | P0 | TASK-028, TASK-029, TASK-030 | TODO |
-| [TASK-032](file:///d:/news-map/tasks/TASK-032-public-events-api.md) | Public Events API (GET /api/v1/events) | Phase 1 — Product | P0 | TASK-004, TASK-006, TASK-028, TASK-031 | TODO |
-| [TASK-033](file:///d:/news-map/tasks/TASK-033-public-event-detail-api.md) | Public Event Detail API (GET /api/v1/events/{eventId}) | Phase 1 — Product | P0 | TASK-004, TASK-006, TASK-028, TASK-029, TASK-030, TASK-031 | TODO |
-| [TASK-034](file:///d:/news-map/tasks/TASK-034-public-events-search-api.md) | Public Events Search API (GET /api/v1/events/search) | Phase 1 — Product | P0 | TASK-004, TASK-006, TASK-032 | TODO |
-| [TASK-035](file:///d:/news-map/tasks/TASK-035-google-maps-web-integration.md) | Google Maps Web Integration & Viewport Bounds Sync | Phase 1 — Product | P0 | TASK-008, TASK-032 | TODO |
-| [TASK-036](file:///d:/news-map/tasks/TASK-036-map-marker-rendering-clustering.md) | Map Marker Rendering & Dynamic Marker Clustering | Phase 1 — Product | P0 | TASK-032, TASK-035 | TODO |
-| [TASK-037](file:///d:/news-map/tasks/TASK-037-event-quick-popup-bottom-sheet.md) | Event Quick Popup & Mobile Bottom Sheet Preview | Phase 1 — Product | P0 | TASK-008, TASK-036 | TODO |
-| [TASK-038](file:///d:/news-map/tasks/TASK-038-event-detail-panel.md) | Event Detail Panel Component | Phase 1 — Product | P0 | TASK-008, TASK-033, TASK-037 | TODO |
-| [TASK-039](file:///d:/news-map/tasks/TASK-039-filter-search-ui.md) | Filter & Search UI Component | Phase 1 — Product | P0 | TASK-008, TASK-034 | TODO |
-| [TASK-040](file:///d:/news-map/tasks/TASK-040-event-feed-view-map-sync.md) | Event Feed View & Map Synchronization | Phase 1 — Product | P0 | TASK-008, TASK-032, TASK-036, TASK-037, TASK-039 | TODO |
-| [TASK-041](file:///d:/news-map/tasks/TASK-041-responsive-layout-accessibility.md) | Responsive Web Layout & Accessibility Polish | Phase 1 — Product | P0 | TASK-008, TASK-035, TASK-036, TASK-037, TASK-038, TASK-039, TASK-040 | TODO |
+| [TASK-001](file:///d:/news-map/tasks/TASK-001-project-bootstrap.md) | Repository Bootstrap & Monorepo Structure | Phase 0 — Foundation | P0 | - | DONE |
+| [TASK-002](file:///d:/news-map/tasks/TASK-002-environment-configuration.md) | Environment Configuration & Secret Management Scheme | Phase 0 — Foundation | P0 | TASK-001 | DONE |
+| [TASK-003](file:///d:/news-map/tasks/TASK-003-database-foundation.md) | Database Foundation (PostgreSQL + PostGIS + pgvector Setup) | Phase 0 — Foundation | P0 | TASK-001, TASK-002 | DONE |
+| [TASK-004](file:///d:/news-map/tasks/TASK-004-database-entities-repositories.md) | Base Database Entity Models & Repositories | Phase 0 — Foundation | P0 | TASK-003 | DONE |
+| [TASK-005](file:///d:/news-map/tasks/TASK-005-redis-queue-foundation.md) | Redis Configuration & Queue Foundation | Phase 0 — Foundation | P0 | TASK-001, TASK-002 | DONE |
+| [TASK-006](file:///d:/news-map/tasks/TASK-006-backend-modular-monolith-foundation.md) | Backend Modular Monolith Foundation | Phase 0 — Foundation | P0 | TASK-001, TASK-002, TASK-003, TASK-005 | DONE |
+| [TASK-007](file:///d:/news-map/tasks/TASK-007-worker-runtime-foundation.md) | Worker Runtime Foundation | Phase 0 — Foundation | P0 | TASK-002, TASK-003, TASK-004, TASK-005 | DONE |
+| [TASK-008](file:///d:/news-map/tasks/TASK-008-frontend-responsive-foundation.md) | Frontend Application Foundation (Responsive Web Shell) | Phase 0 — Foundation | P0 | TASK-001, TASK-002 | DONE |
+| [TASK-009](file:///d:/news-map/tasks/TASK-009-docker-development-environment.md) | Docker Development Environment | Phase 0 — Foundation | P0 | TASK-001, TASK-002, TASK-003, TASK-005 | DONE |
+| [TASK-010](file:///d:/news-map/tasks/TASK-010-observability-foundation.md) | Observability Foundation (Structured Logging & Metrics) | Phase 0 — Foundation | P0 | TASK-001, TASK-002, TASK-006, TASK-007 | DONE |
+| [TASK-011](file:///d:/news-map/tasks/TASK-011-testing-harness-foundation.md) | Testing Harness & QA Foundation | Phase 0 — Foundation | P0 | TASK-001, TASK-003, TASK-004, TASK-005, TASK-006 | DONE |
+| [TASK-012](file:///d:/news-map/tasks/TASK-012-cicd-pipeline-gates.md) | CI/CD Pipeline & Quality Gates | Phase 0 — Foundation | P0 | TASK-001, TASK-009, TASK-010, TASK-011 | DONE |
+| [TASK-013](file:///d:/news-map/tasks/TASK-013-source-management-domain.md) | Source Management Domain & Registry | Phase 1 — News Ingestion | P0 | TASK-004, TASK-006 | DONE |
+| [TASK-014](file:///d:/news-map/tasks/TASK-014-source-scheduler-health-monitor.md) | Source Polling Scheduler & Health Monitor | Phase 1 — News Ingestion | P0 | TASK-005, TASK-007, TASK-010, TASK-013 | DONE |
+| [TASK-015](file:///d:/news-map/tasks/TASK-015-ssrf-safe-http-client.md) | SSRF-Safe HTTP Client & Fetch Policy | Phase 1 — News Ingestion | P0 | TASK-002, TASK-010, TASK-013 | DONE |
+| [TASK-016](file:///d:/news-map/tasks/TASK-016-rss-feed-adapter.md) | RSS & Feed Adapter Implementation | Phase 1 — News Ingestion | P0 | TASK-013, TASK-015 | DONE |
+| [TASK-017](file:///d:/news-map/tasks/TASK-017-article-normalization-sanitization.md) | Article Normalization & Sanitization | Phase 1 — News Ingestion | P0 | TASK-004, TASK-016 | DONE |
+| [TASK-018](file:///d:/news-map/tasks/TASK-018-article-deduplication-engine.md) | Article Deduplication Engine | Phase 1 — News Ingestion | P0 | TASK-004, TASK-017 | DONE |
+| [TASK-019](file:///d:/news-map/tasks/TASK-019-article-ingestion-worker-pipeline.md) | Article Ingestion Worker & Pipeline Integration | Phase 1 — News Ingestion | P0 | TASK-005, TASK-007, TASK-010, TASK-013, TASK-014, TASK-015, TASK-016, TASK-017, TASK-018 | DONE |
+| [TASK-020](file:///d:/news-map/tasks/TASK-020-nlp-extraction-prompt-client.md) | NLP Extraction Prompt Engineering & LLM Client | Phase 1 — Intelligence Pipeline | P0 | TASK-002, TASK-006, TASK-010 | DONE |
+| [TASK-021](file:///d:/news-map/tasks/TASK-021-event-extraction-schema-validation.md) | Event & Entity Extraction Schema Validation | Phase 1 — Intelligence Pipeline | P0 | TASK-020 | DONE |
+| [TASK-022](file:///d:/news-map/tasks/TASK-022-event-extraction-worker.md) | Event & Entity Extraction Worker | Phase 1 — Intelligence Pipeline | P0 | TASK-005, TASK-007, TASK-010, TASK-019, TASK-020, TASK-021 | DONE |
+| [TASK-023](file:///d:/news-map/tasks/TASK-023-location-extraction-normalization.md) | Location Extraction & Hierarchical Normalization | Phase 1 — Intelligence Pipeline | P0 | TASK-021, TASK-022 | DONE |
+| [TASK-024](file:///d:/news-map/tasks/TASK-024-geocoding-adapter-spatial-resolution.md) | Geocoding Adapter & Spatial Resolution Service | Phase 1 — Intelligence Pipeline | P0 | TASK-002, TASK-023 | DONE |
+| [TASK-025](file:///d:/news-map/tasks/TASK-025-geocoding-worker-persistence.md) | Geocoding Worker & Location Persistence | Phase 1 — Intelligence Pipeline | P0 | TASK-004, TASK-005, TASK-007, TASK-022, TASK-023, TASK-024 | DONE |
+| [TASK-026](file:///d:/news-map/tasks/TASK-026-clustering-candidate-retrieval.md) | Event Clustering: Candidate Retrieval Service | Phase 1 — Intelligence Pipeline | P0 | TASK-004, TASK-021, TASK-025 | DONE |
+| [TASK-027](file:///d:/news-map/tasks/TASK-027-clustering-similarity-scoring.md) | Event Clustering: Multi-Signal Similarity & Scoring | Phase 1 — Intelligence Pipeline | P0 | TASK-021, TASK-026 | DONE |
+| [TASK-028](file:///d:/news-map/tasks/TASK-028-clustering-worker-provenance.md) | Event Clustering Worker & Provenance Persistence | Phase 1 — Intelligence Pipeline | P0 | TASK-004, TASK-005, TASK-007, TASK-022, TASK-025, TASK-026, TASK-027 | DONE |
+| [TASK-029](file:///d:/news-map/tasks/TASK-029-event-facts-timeline-worker.md) | Event Facts & Timeline Extraction Worker | Phase 1 — Intelligence Pipeline | P0 | TASK-004, TASK-028 | DONE |
+| [TASK-030](file:///d:/news-map/tasks/TASK-030-event-summary-generator.md) | Event Summary Generator | Phase 1 — Intelligence Pipeline | P0 | TASK-020, TASK-028, TASK-029 | DONE |
+| [TASK-031](file:///d:/news-map/tasks/TASK-031-event-confidence-scoring.md) | Event Confidence Scoring Engine | Phase 1 — Intelligence Pipeline | P0 | TASK-028, TASK-029, TASK-030 | DONE |
+| [TASK-032](file:///d:/news-map/tasks/TASK-032-public-events-api.md) | Public Events API (GET /api/v1/events) | Phase 1 — Product | P0 | TASK-004, TASK-006, TASK-028, TASK-031 | DONE |
+| [TASK-033](file:///d:/news-map/tasks/TASK-033-public-event-detail-api.md) | Public Event Detail API (GET /api/v1/events/{eventId}) | Phase 1 — Product | P0 | TASK-004, TASK-006, TASK-028, TASK-029, TASK-030, TASK-031 | DONE |
+| [TASK-034](file:///d:/news-map/tasks/TASK-034-public-events-search-api.md) | Public Events Search API (GET /api/v1/events/search) | Phase 1 — Product | P0 | TASK-004, TASK-006, TASK-032 | DONE |
+| [TASK-035](file:///d:/news-map/tasks/TASK-035-google-maps-web-integration.md) | Google Maps Web Integration & Viewport Bounds Sync | Phase 1 — Product | P0 | TASK-008, TASK-032 | DONE |
+| [TASK-036](file:///d:/news-map/tasks/TASK-036-map-marker-rendering-clustering.md) | Map Marker Rendering & Dynamic Marker Clustering | Phase 1 — Product | P0 | TASK-032, TASK-035 | DONE |
+| [TASK-037](file:///d:/news-map/tasks/TASK-037-event-quick-popup-bottom-sheet.md) | Event Quick Popup & Mobile Bottom Sheet Preview | Phase 1 — Product | P0 | TASK-008, TASK-036 | DONE |
+| [TASK-038](file:///d:/news-map/tasks/TASK-038-event-detail-panel.md) | Event Detail Panel Component | Phase 1 — Product | P0 | TASK-008, TASK-033, TASK-037 | DONE |
+| [TASK-039](file:///d:/news-map/tasks/TASK-039-filter-search-ui.md) | Filter & Search UI Component | Phase 1 — Product | P0 | TASK-008, TASK-034 | DONE |
+| [TASK-040](file:///d:/news-map/tasks/TASK-040-event-feed-view-map-sync.md) | Event Feed View & Map Synchronization | Phase 1 — Product | P0 | TASK-008, TASK-032, TASK-036, TASK-037, TASK-039 | DONE |
+| [TASK-041](file:///d:/news-map/tasks/TASK-041-responsive-layout-accessibility.md) | Responsive Web Layout & Accessibility Polish | Phase 1 — Product | P0 | TASK-008, TASK-035, TASK-036, TASK-037, TASK-038, TASK-039, TASK-040 | DONE |
 | [TASK-042](file:///d:/news-map/tasks/TASK-042-historical-snapshot-worker.md) | Historical Snapshot Collection Worker | Phase 1 — Trust & Operations | P1 | TASK-004, TASK-005, TASK-007, TASK-028 | TODO |
 | [TASK-043](file:///d:/news-map/tasks/TASK-043-admin-auth-rbac.md) | Admin Authentication & Authorization Module | Phase 1 — Trust & Operations | P0 | TASK-002, TASK-004, TASK-006, TASK-010 | TODO |
 | [TASK-044](file:///d:/news-map/tasks/TASK-044-admin-source-monitor-api-ui.md) | Admin Source Monitor API & UI | Phase 1 — Trust & Operations | P1 | TASK-013, TASK-014, TASK-043 | TODO |

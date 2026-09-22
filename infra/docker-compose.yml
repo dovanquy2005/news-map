@@ -1,0 +1,91 @@
+services:
+
+  postgres:
+    build:
+      context: ./postgres
+      dockerfile: Dockerfile
+    container_name: news-map-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: news_map
+      POSTGRES_USER: news_map
+      POSTGRES_PASSWORD: NewsMapDev_2026!
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U news_map -d news_map"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+  redis:
+    image: redis:7-alpine
+    container_name: news-map-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build:
+      context: ..
+      dockerfile: backend/Dockerfile
+    container_name: news-map-api
+    restart: unless-stopped
+    environment:
+      APP_ENV: local
+      PORT: 8000
+      DATABASE_URL: postgresql://news_map:NewsMapDev_2026!@postgres:5432/news_map
+      REDIS_URL: redis://redis:6379/0
+      LOG_LEVEL: INFO
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../backend:/workspace/backend
+      - ../workers:/workspace/workers
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8000/healthz || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  worker:
+    build:
+      context: ..
+      dockerfile: backend/Dockerfile
+    container_name: news-map-worker
+    restart: unless-stopped
+    environment:
+      APP_ENV: local
+      DATABASE_URL: postgresql://news_map:NewsMapDev_2026!@postgres:5432/news_map
+      REDIS_URL: redis://redis:6379/0
+      LOG_LEVEL: INFO
+    command: ["python", "-m", "workers.runner", "--all"]
+    volumes:
+      - ../backend:/workspace/backend
+      - ../workers:/workspace/workers
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
+  redis_data:

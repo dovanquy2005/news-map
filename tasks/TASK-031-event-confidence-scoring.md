@@ -1,7 +1,7 @@
 # TASK-031 — Event Confidence Scoring Engine
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

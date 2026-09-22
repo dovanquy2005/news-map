@@ -1,7 +1,7 @@
 # TASK-032 — Public Events API (GET /api/v1/events)
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

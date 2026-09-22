@@ -1,7 +1,7 @@
 # TASK-021 — Event & Entity Extraction Schema Validation
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -85,10 +85,10 @@ Implement strict schema validation and domain sanitization for raw LLM extractio
 - `tests/fixtures/llm_outputs/invalid_extraction.json`
 
 ## Acceptance Criteria
-- [ ] Schema validator strictly enforces all fields from `prd.md` Section 7.2.
-- [ ] Fallback parser handles markdown fences and common LLM formatting artifacts.
-- [ ] Invalid model outputs are safely caught without throwing unhandled exceptions.
-- [ ] Unit tests verify all valid, edge-case, and adversarial model payloads.
+- [x] Schema validator strictly enforces all fields from `prd.md` Section 7.2.
+- [x] Fallback parser handles markdown fences and common LLM formatting artifacts.
+- [x] Invalid model outputs are safely caught without throwing unhandled exceptions.
+- [x] Unit tests verify all valid, edge-case, and adversarial model payloads.
 
 ## Completion Report
 When completed, report:

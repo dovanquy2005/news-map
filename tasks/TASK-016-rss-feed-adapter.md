@@ -1,7 +1,7 @@
 # TASK-016 — RSS & Feed Adapter Implementation
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -82,10 +82,10 @@ Implement modular source adapters (starting with RSS 2.0 and Atom feeds) adherin
 - `tests/fixtures/feeds/xxe_exploit.xml`
 
 ## Acceptance Criteria
-- [ ] RSS adapter successfully parses RSS 2.0 and Atom feeds into typed DTOs.
-- [ ] XXE security fixture proves entity injection is blocked.
-- [ ] Parse errors on single feed items are handled gracefully without failing the entire batch.
-- [ ] Date parser handles diverse Vietnamese and international feed date formats.
+- [x] RSS adapter successfully parses RSS 2.0 and Atom feeds into typed DTOs.
+- [x] XXE security fixture proves entity injection is blocked.
+- [x] Parse errors on single feed items are handled gracefully without failing the entire batch.
+- [x] Date parser handles diverse Vietnamese and international feed date formats.
 
 ## Completion Report
 When completed, report:

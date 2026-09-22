@@ -1,7 +1,7 @@
 # TASK-023 — Location Extraction & Hierarchical Normalization
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

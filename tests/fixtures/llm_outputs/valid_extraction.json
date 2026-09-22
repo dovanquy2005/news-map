@@ -1,0 +1,21 @@
+{
+  "is_event": true,
+  "event_title": "Khởi công xây dựng cầu Thủ Thiêm 4 nối TP Thủ Đức và Quận 7",
+  "event_type": "INFRASTRUCTURE",
+  "location_text": "Khu đô thị mới Thủ Thiêm, TP.HCM",
+  "province": "TP.HCM",
+  "district": "Quận 7",
+  "ward": "Tân Thuận Đông",
+  "occurred_at": "2026-03-16T08:00:00Z",
+  "facts": [
+    "Dự án có tổng mức đầu tư 6.000 tỷ đồng",
+    "Cầu có chiều dài 2,16 km với 6 làn xe",
+    "Dự kiến hoàn thành đưa vào khai thác năm 2028"
+  ],
+  "entities": [
+    {"name": "UBND TP.HCM", "type": "ORGANIZATION"},
+    {"name": "Sở Giao thông Vận tải", "type": "ORGANIZATION"}
+  ],
+  "uncertainty_notes": null,
+  "extraction_confidence": 0.95
+}

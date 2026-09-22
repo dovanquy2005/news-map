@@ -1,7 +1,7 @@
 # TASK-040 — Event Feed View & Map Synchronization
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

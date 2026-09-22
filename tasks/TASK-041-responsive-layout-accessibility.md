@@ -1,7 +1,7 @@
 # TASK-041 — Responsive Web Layout & Accessibility Polish
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

@@ -1,7 +1,7 @@
 # TASK-013 — Source Management Domain & Registry
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -80,10 +80,10 @@ Implement the news source domain model, registry service, and management APIs al
 - `tests/integration/test_sources_repo.py`
 
 ## Acceptance Criteria
-- [ ] Source domain model and CRUD service fully implemented and unit-tested.
-- [ ] Disabling a source immediately excludes it from active source queries.
-- [ ] Database seed populates verified Vietnamese news sources.
-- [ ] Timestamps for success and error correctly update upon crawl result reporting.
+- [x] Source domain model and CRUD service fully implemented and unit-tested.
+- [x] Disabling a source immediately excludes it from active source queries.
+- [x] Database seed populates verified Vietnamese news sources.
+- [x] Timestamps for success and error correctly update upon crawl result reporting.
 
 ## Completion Report
 When completed, report:

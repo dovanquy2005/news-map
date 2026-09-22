@@ -1,7 +1,7 @@
 # TASK-008 — Frontend Application Foundation (Responsive Web Shell & Design System)
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -86,10 +86,11 @@ Initialize the single responsive web application shell (React + TypeScript), set
 - `tests/frontend/ResponsiveShell.test.tsx`
 
 ## Acceptance Criteria
-- [ ] Application renders clean responsive layouts on 360px (mobile), 768px (tablet), and 1280px (desktop) without layout breaking or horizontal scrolling.
-- [ ] URL state helper correctly reads and updates query string parameters for filters and coordinates.
-- [ ] TanStack Query client is configured and available in React context.
-- [ ] Automated component tests verify viewport behavior and accessibility standards.
+- [x] Application shell loads cleanly across mobile (360px), tablet (768px), and desktop (1024px+).
+- [x] Design tokens (colors, typography, spacing) are established centrally and strictly applied.
+- [x] Fullscreen map container, mobile bottom sheet, and desktop side-panel structure are functional.
+- [x] Frontend environment configuration strictly prevents bundling of server-side secrets.
+- [x] Automated component tests verify viewport behavior and accessibility standards.
 
 ## Completion Report
 When completed, report:

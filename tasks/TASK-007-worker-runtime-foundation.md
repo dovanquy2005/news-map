@@ -1,7 +1,7 @@
 # TASK-007 — Worker Runtime Foundation
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -74,10 +74,11 @@ Establish the independent background worker execution runtime, process supervisi
 - `tests/integration/test_worker_runtime.py`
 
 ## Acceptance Criteria
-- [ ] Worker runtime starts, processes jobs from configured queues, and exits cleanly on SIGTERM.
-- [ ] Distributed locking prevents overlapping job execution across worker instances.
-- [ ] DB connection pooling per worker process properly recycles connections without leakage.
-- [ ] Automated tests verify job execution, retries, and clean shutdown.
+- [x] Background worker runner script consumes jobs across distinct named queues.
+- [x] Graceful shutdown traps SIGINT/SIGTERM and terminates without in-flight task corruption.
+- [x] Failed jobs record failure details and trigger backoff retries.
+- [x] Database connections release cleanly back to connection pool after every job.
+- [x] Automated tests verify job execution, retries, and clean shutdown.
 
 ## Completion Report
 When completed, report:

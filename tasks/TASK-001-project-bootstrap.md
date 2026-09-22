@@ -1,7 +1,7 @@
 # TASK-001 — Repository Bootstrap & Monorepo Structure
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -80,10 +80,10 @@ Establish the project workspace directory layout, dependency management, root co
 - `README.md`
 
 ## Acceptance Criteria
-- [ ] Directory layout matches `docs/03-backend-architecture.md` verbatim.
-- [ ] Running format and lint checks from project root succeeds.
-- [ ] `.gitignore` prevents staging sensitive local files and credentials.
-- [ ] Clean boundary between backend modular monolith, async workers, and frontend responsive web app.
+- [x] Directory layout matches `docs/03-backend-architecture.md` verbatim.
+- [x] Running format and lint checks from project root succeeds.
+- [x] `.gitignore` prevents staging sensitive local files and credentials.
+- [x] Clean boundary between backend modular monolith, async workers, and frontend responsive web app.
 
 ## Completion Report
 When completed, report:

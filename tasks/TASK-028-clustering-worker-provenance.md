@@ -1,7 +1,7 @@
 # TASK-028 — Event Clustering Worker & Provenance Persistence
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

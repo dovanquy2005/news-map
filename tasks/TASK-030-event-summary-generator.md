@@ -1,7 +1,7 @@
 # TASK-030 — Event Summary Generator
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

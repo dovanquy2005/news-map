@@ -1,7 +1,7 @@
 # TASK-027 — Event Clustering: Multi-Signal Similarity & Scoring
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

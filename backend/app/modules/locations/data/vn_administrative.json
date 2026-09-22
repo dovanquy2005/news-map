@@ -1,0 +1,100 @@
+{
+  "provinces": [
+    {
+      "name": "TP. Hồ Chí Minh",
+      "aliases": ["tp.hcm", "tp hcm", "tphcm", "tp. hồ chí minh", "thành phố hồ chí minh", "hồ chí minh", "sài gòn", "sai gon", "hcm"],
+      "districts": [
+        "Quận 1", "Quận 3", "Quận 4", "Quận 5", "Quận 6", "Quận 7", "Quận 8", "Quận 10", "Quận 11", "Quận 12",
+        "Bình Thạnh", "Gò Vấp", "Tân Bình", "Tân Phú", "Phú Nhuận", "Bình Tân", "TP. Thủ Đức", "Thủ Đức",
+        "Bình Chánh", "Củ Chi", "Hóc Môn", "Nhà Bè", "Cần Giờ"
+      ]
+    },
+    {
+      "name": "Hà Nội",
+      "aliases": ["hn", "hà nội", "ha noi", "thành phố hà nội", "tp. hà nội", "tp hà nội", "thủ đô hà nội"],
+      "districts": [
+        "Ba Đình", "Hoàn Kiếm", "Tây Hồ", "Long Biên", "Cầu Giấy", "Đống Đa", "Hai Bà Trưng", "Hoàng Mai",
+        "Thanh Xuân", "Sóc Sơn", "Đông Anh", "Gia Lâm", "Nam Từ Liêm", "Bắc Từ Liêm", "Thanh Trì", "Mê Linh",
+        "Hà Đông", "Sơn Tây", "Ba Vì", "Phúc Thọ", "Đan Phượng", "Hoài Đức", "Quốc Oai", "Thạch Thất",
+        "Chương Mỹ", "Thanh Oai", "Thường Tín", "Phú Xuyên", "Ứng Hòa", "Mỹ Đức"
+      ]
+    },
+    {
+      "name": "Đà Nẵng",
+      "aliases": ["đn", "đà nẵng", "da nang", "tp. đà nẵng", "tp đà nẵng", "thành phố đà nẵng"],
+      "districts": ["Hải Châu", "Thanh Khê", "Sơn Trà", "Ngũ Hành Sơn", "Liên Chiểu", "Cẩm Lệ", "Hòa Vang", "Hoàng Sa"]
+    },
+    {
+      "name": "Hải Phòng",
+      "aliases": ["hải phòng", "hai phong", "tp. hải phòng", "tp hải phòng", "thành phố hải phòng"],
+      "districts": ["Hồng Bàng", "Ngô Quyền", "Lê Chân", "Hải An", "Kiến An", "Đồ Sơn", "Dương Kinh", "Thủy Nguyên", "An Dương", "An Lão", "Kiến Thụy", "Tiên Lãng", "Vĩnh Bảo", "Cát Hải", "Bạch Long Vĩ"]
+    },
+    {
+      "name": "Cần Thơ",
+      "aliases": ["cần thơ", "can tho", "tp. cần thơ", "tp cần thơ", "thành phố cần thơ"],
+      "districts": ["Ninh Kiều", "Bình Thủy", "Cái Răng", "Ô Môn", "Thốt Nốt", "Phong Điền", "Cờ Đỏ", "Thới Lai", "Vĩnh Thạnh"]
+    },
+    {"name": "An Giang", "aliases": ["an giang"], "districts": ["Long Xuyên", "Châu Đốc", "An Phú", "Tân Châu", "Phú Tân", "Châu Phú", "Tịnh Biên", "Tri Tôn", "Châu Thành", "Chợ Mới", "Thoại Sơn"]},
+    {"name": "Bà Rịa - Vũng Tàu", "aliases": ["bà rịa - vũng tàu", "bà rịa vũng tàu", "vũng tàu", "ba ria vung tau"], "districts": ["Vũng Tàu", "Bà Rịa", "Châu Đức", "Xuyên Mộc", "Long Điền", "Đất Đỏ", "Phú Mỹ", "Côn Đảo"]},
+    {"name": "Bắc Giang", "aliases": ["bắc giang", "bac giang"], "districts": ["Bắc Giang", "Yên Thế", "Tân Yên", "Lạng Giang", "Lục Nam", "Lục Ngạn", "Sơn Động", "Yên Dũng", "Việt Yên", "Hiệp Hòa"]},
+    {"name": "Bắc Kạn", "aliases": ["bắc kạn", "bac kan"], "districts": ["Bắc Kạn", "Pác Nặm", "Ba Bể", "Ngân Sơn", "Bạch Thông", "Chợ Đồn", "Chợ Mới", "Na Rì"]},
+    {"name": "Bạc Liêu", "aliases": ["bạc liêu", "bac lieu"], "districts": ["Bạc Liêu", "Hồng Dân", "Phước Long", "Vĩnh Lợi", "Giá Rai", "Đông Hải", "Hòa Bình"]},
+    {"name": "Bắc Ninh", "aliases": ["bắc ninh", "bac ninh"], "districts": ["Bắc Ninh", "Yên Phong", "Quế Võ", "Tiên Du", "Từ Sơn", "Thuận Thành", "Gia Bình", "Lương Tài"]},
+    {"name": "Bến Tre", "aliases": ["bến tre", "ben tre"], "districts": ["Bến Tre", "Châu Thành", "Chợ Lách", "Mỏ Cày Nam", "Giồng Trôm", "Bình Đại", "Ba Tri", "Thạnh Phú", "Mỏ Cày Bắc"]},
+    {"name": "Bình Định", "aliases": ["bình định", "binh dinh", "quy nhơn"], "districts": ["Quy Nhơn", "An Lão", "Hoài Nhơn", "Hoài Ân", "Phù Mỹ", "Vĩnh Thạnh", "Tây Sơn", "Phù Cát", "An Nhơn", "Tuy Phước", "Vân Canh"]},
+    {"name": "Bình Dương", "aliases": ["bình dương", "binh duong"], "districts": ["Thủ Dầu Một", "Bàu Bàng", "Dầu Tiếng", "Bến Cát", "Phú Giáo", "Tân Uyên", "Dĩ An", "Thuận An", "Bắc Tân Uyên"]},
+    {"name": "Bình Phước", "aliases": ["bình phước", "binh phuoc"], "districts": ["Đồng Xoài", "Bình Long", "Phước Long", "Bù Gia Mập", "Lộc Ninh", "Bù Đốp", "Hớn Quản", "Đồng Phú", "Bù Đăng", "Chơn Thành", "Phú Riềng"]},
+    {"name": "Bình Thuận", "aliases": ["bình thuận", "binh thuan", "phan thiết"], "districts": ["Phan Thiết", "La Gi", "Tuy Phong", "Bắc Bình", "Hàm Thuận Bắc", "Hàm Thuận Nam", "Hàm Tân", "Đức Linh", "Tánh Linh", "Phú Quý"]},
+    {"name": "Cà Mau", "aliases": ["cà mau", "ca mau"], "districts": ["Cà Mau", "U Minh", "Thới Bình", "Trần Văn Thời", "Cái Nước", "Đầm Dơi", "Năm Căn", "Phú Tân", "Ngọc Hiển"]},
+    {"name": "Cao Bằng", "aliases": ["cao bằng", "cao bang"], "districts": ["Cao Bằng", "Bảo Lâm", "Bảo Lạc", "Hà Quảng", "Trùng Khánh", "Hạ Lang", "Quảng Hòa", "Hoà An", "Nguyên Bình", "Thạch An"]},
+    {"name": "Đắk Lắk", "aliases": ["đắk lắk", "đắc lắc", "dak lak", "buôn ma thuột"], "districts": ["Buôn Ma Thuột", "Buôn Hồ", "Ea H'leo", "Ea Súp", "Buôn Đôn", "Cư M'gar", "Krông Búk", "Krông Năng", "Ea Kar", "M'Đrắk", "Krông Bông", "Krông Pắc", "Krông A Na", "Lắk", "Cư Kuin"]},
+    {"name": "Đắk Nông", "aliases": ["đắk nông", "đắc nông", "dak nong"], "districts": ["Gia Nghĩa", "Đăk Glong", "Cư Jút", "Đắk Mil", "Krông Nô", "Đắk Song", "Đắk R'Lấp", "Tuy Đức"]},
+    {"name": "Điện Biên", "aliases": ["điện biên", "dien bien"], "districts": ["Điện Biên Phủ", "Mường Lay", "Mường Nhé", "Mường Chà", "Tủa Chùa", "Tuần Giáo", "Điện Biên", "Điện Biên Đông", "Mường Ảng", "Nậm Pồ"]},
+    {"name": "Đồng Nai", "aliases": ["đồng nai", "dong nai", "biên hòa"], "districts": ["Biên Hòa", "Long Khánh", "Tân Phú", "Vĩnh Cửu", "Định Quán", "Trảng Bom", "Thống Nhất", "Cẩm Mỹ", "Long Thành", "Xuân Lộc", "Nhơn Trạch"]},
+    {"name": "Đồng Tháp", "aliases": ["đồng tháp", "dong thap"], "districts": ["Cao Lãnh", "Sa Đéc", "Hồng Ngự", "Tân Hồng", "Tam Nông", "Tháp Mười", "Thanh Bình", "Lấp Vò", "Lai Vung", "Châu Thành"]},
+    {"name": "Gia Lai", "aliases": ["gia lai", "pleiku"], "districts": ["Pleiku", "An Khê", "Ayun Pa", "KBang", "Đăk Đoa", "Chư Păh", "Ia Grai", "Mang Yang", "Kông Chro", "Đức Cơ", "Chư Prông", "Chư Sê", "Đăk Pơ", "Ia Pa", "Krông Pa", "Phú Thiện", "Chư Pưh"]},
+    {"name": "Hà Giang", "aliases": ["hà giang", "ha giang"], "districts": ["Hà Giang", "Đồng Văn", "Mèo Vạc", "Yên Minh", "Quản Bạ", "Vị Xuyên", "Bắc Mê", "Hoàng Su Phì", "Xín Mần", "Bắc Quang", "Quang Bình"]},
+    {"name": "Hà Nam", "aliases": ["hà nam", "ha nam", "phủ lý"], "districts": ["Phủ Lý", "Duy Tiên", "Kim Bảng", "Thanh Liêm", "Bình Lục", "Lý Nhân"]},
+    {"name": "Hà Tĩnh", "aliases": ["hà tĩnh", "ha tinh"], "districts": ["Hà Tĩnh", "Hồng Lĩnh", "Hương Sơn", "Đức Thọ", "Vũ Quang", "Nghi Xuân", "Can Lộc", "Hương Khê", "Thạch Hà", "Cẩm Xuyên", "Kỳ Anh"]},
+    {"name": "Hải Dương", "aliases": ["hải dương", "hai duong"], "districts": ["Hải Dương", "Chí Linh", "Nam Sách", "Kinh Môn", "Kim Thành", "Thanh Hà", "Cẩm Giàng", "Bình Giang", "Gia Lộc", "Tứ Kỳ", "Ninh Giang", "Thanh Miện"]},
+    {"name": "Hậu Giang", "aliases": ["hậu giang", "hau giang", "vị thanh"], "districts": ["Vị Thanh", "Ngã Bảy", "Châu Thành A", "Châu Thành", "Phụng Hiệp", "Vị Thủy", "Long Mỹ"]},
+    {"name": "Hòa Bình", "aliases": ["hòa bình", "hoa binh"], "districts": ["Hòa Bình", "Đà Bắc", "Lương Sơn", "Kim Bôi", "Cao Phong", "Tân Lạc", "Mai Châu", "Lạc Sơn", "Yên Thủy", "Lạc Thủy"]},
+    {"name": "Hưng Yên", "aliases": ["hưng yên", "hung yen"], "districts": ["Hưng Yên", "Văn Lâm", "Văn Giang", "Yên Mỹ", "Mỹ Hào", "Ân Thi", "Khoái Châu", "Kim Động", "Tiên Lữ", "Phù Cừ"]},
+    {"name": "Khánh Hòa", "aliases": ["khánh hòa", "khanh hoa", "nha trang"], "districts": ["Nha Trang", "Cam Ranh", "Cam Lâm", "Vạn Ninh", "Ninh Hòa", "Khánh Vĩnh", "Diên Khánh", "Khánh Sơn", "Trường Sa"]},
+    {"name": "Kiên Giang", "aliases": ["kiên giang", "kien giang", "phú quốc", "rạch giá"], "districts": ["Rạch Giá", "Hà Tiên", "Kiên Lương", "Hòn Đất", "Tân Hiệp", "Châu Thành", "Giồng Riềng", "Gò Quao", "An Biên", "An Minh", "Vĩnh Thuận", "Phú Quốc", "Kiên Hải", "U Minh Thượng", "Giang Thành"]},
+    {"name": "Kon Tum", "aliases": ["kon tum"], "districts": ["Kon Tum", "Đăk Glei", "Ngọc Hồi", "Đăk Tô", "Kon Plông", "Kon Rẫy", "Đăk Hà", "Sa Thầy", "Tu Mơ Rông", "Ia H' Drai"]},
+    {"name": "Lai Châu", "aliases": ["lai châu", "lai chau"], "districts": ["Lai Châu", "Tam Đường", "Mường Tè", "Sìn Hồ", "Phong Thổ", "Than Uyên", "Tân Uyên", "Nậm Nhùn"]},
+    {"name": "Lâm Đồng", "aliases": ["lâm đồng", "lam dong", "đà lạt", "da lat", "bảo lộc"], "districts": ["Đà Lạt", "Bảo Lộc", "Đam Rông", "Lạc Dương", "Lâm Hà", "Đơn Dương", "Đức Trọng", "Di Linh", "Bảo Lâm", "Đạ Huoai", "Đạ Tẻh", "Cát Tiên"]},
+    {"name": "Lạng Sơn", "aliases": ["lạng sơn", "lang son"], "districts": ["Lạng Sơn", "Tràng Định", "Bình Gia", "Văn Lãng", "Cao Lộc", "Văn Quan", "Bắc Sơn", "Hữu Lũng", "Chi Lăng", "Lộc Bình", "Đình Lập"]},
+    {"name": "Lào Cai", "aliases": ["lào cai", "lao cai", "sa pa", "sapa"], "districts": ["Lào Cai", "Bát Xát", "Mường Khương", "Si Ma Cai", "Bắc Hà", "Bảo Thắng", "Bảo Yên", "Sa Pa", "Văn Bàn"]},
+    {"name": "Long An", "aliases": ["long an", "tân an"], "districts": ["Tân An", "Kiến Tường", "Tân Hưng", "Vĩnh Hưng", "Mộc Hóa", "Tân Thạnh", "Thạnh Hóa", "Đức Huệ", "Đức Hòa", "Bến Lức", "Thủ Thừa", "Tân Trụ", "Cần Đước", "Cần Giuộc", "Châu Thành"]},
+    {"name": "Nam Định", "aliases": ["nam định", "nam dinh"], "districts": ["Nam Định", "Mỹ Lộc", "Vụ Bản", "Ý Yên", "Nghĩa Hưng", "Nam Trực", "Trực Ninh", "Xuân Trường", "Giao Thủy", "Hải Hậu"]},
+    {"name": "Nghệ An", "aliases": ["nghệ an", "nghe an", "vinh"], "districts": ["Vinh", "Cửa Lò", "Thái Hoà", "Quế Phong", "Quỳ Châu", "Kỳ Sơn", "Tương Dương", "Nghĩa Đàn", "Quỳ Hợp", "Quỳnh Lưu", "Con Cuông", "Tân Kỳ", "Anh Sơn", "Diễn Châu", "Yên Thành", "Đô Lương", "Thanh Chương", "Nghi Lộc", "Nam Đàn", "Hưng Nguyên", "Hoàng Mai"]},
+    {"name": "Ninh Bình", "aliases": ["ninh bình", "ninh binh"], "districts": ["Ninh Bình", "Tam Điệp", "Nho Quan", "Gia Viễn", "Hoa Lư", "Yên Khánh", "Kim Sơn", "Yên Mô"]},
+    {"name": "Ninh Thuận", "aliases": ["ninh thuận", "ninh thuan", "phan rang"], "districts": ["Phan Rang - Tháp Chàm", "Bác Ái", "Ninh Sơn", "Ninh Hải", "Ninh Phước", "Thuận Bắc", "Thuận Nam"]},
+    {"name": "Phú Thọ", "aliases": ["phú thọ", "phu tho", "việt trì"], "districts": ["Việt Trì", "Phú Thọ", "Đoan Hùng", "Hạ Hoà", "Thanh Ba", "Phù Ninh", "Yên Lập", "Cẩm Khê", "Tam Nông", "Lâm Thao", "Thanh Sơn", "Thanh Thuỷ", "Tân Sơn"]},
+    {"name": "Phú Yên", "aliases": ["phú yên", "phu yen", "tuy hòa"], "districts": ["Tuy Hoà", "Sông Cầu", "Đồng Xuân", "Tuy An", "Sơn Hòa", "Sông Hinh", "Tây Hoà", "Phú Hoà", "Đông Hòa"]},
+    {"name": "Quảng Bình", "aliases": ["quảng bình", "quang binh", "đồng hới"], "districts": ["Đồng Hới", "Minh Hóa", "Tuyên Hóa", "Quảng Trạch", "Bố Trạch", "Quảng Ninh", "Lệ Thủy", "Ba Đồn"]},
+    {"name": "Quảng Nam", "aliases": ["quảng nam", "quang nam", "hội an", "tam kỳ"], "districts": ["Tam Kỳ", "Hội An", "Tây Giang", "Đông Giang", "Đại Lộc", "Điện Bàn", "Duy Xuyên", "Quế Sơn", "Nam Giang", "Phước Sơn", "Hiệp Đức", "Thăng Bình", "Tiên Phước", "Bắc Trà My", "Nam Trà My", "Núi Thành", "Phú Ninh", "Nông Sơn"]},
+    {"name": "Quảng Ngãi", "aliases": ["quảng ngãi", "quang ngai"], "districts": ["Quảng Ngãi", "Bình Sơn", "Trà Bồng", "Tư Nghĩa", "Sơn Tịnh", "Tư Nghĩa", "Sơn Hà", "Tư Nghĩa", "Mộ Đức", "Đức Phổ", "Ba Tơ", "Minh Long", "Lý Sơn"]},
+    {"name": "Quảng Ninh", "aliases": ["quảng ninh", "quang ninh", "hạ long"], "districts": ["Hạ Long", "Móng Cái", "Cẩm Phả", "Uông Bí", "Bình Liêu", "Tiên Yên", "Đầm Hà", "Hải Hà", "Ba Chẽ", "Vân Đồn", "Đông Triều", "Quảng Yên", "Cô Tô"]},
+    {"name": "Quảng Trị", "aliases": ["quảng trị", "quang tri", "đông hà"], "districts": ["Đông Hà", "Quảng Trị", "Vĩnh Linh", "Hướng Hóa", "Gio Linh", "Đakrông", "Cam Lộ", "Triệu Phong", "Hải Lăng", "Cồn Cỏ"]},
+    {"name": "Sóc Trăng", "aliases": ["sóc trăng", "soc trang"], "districts": ["Sóc Trăng", "Châu Thành", "Kế Sách", "Mỹ Tú", "Cù Lao Dung", "Long Phú", "Mỹ Xuyên", "Ngã Năm", "Thạnh Trị", "Vĩnh Châu", "Trần Đề"]},
+    {"name": "Sơn La", "aliases": ["sơn la", "son la", "mộc châu"], "districts": ["Sơn La", "Quỳnh Nhai", "Mường La", "Thuận Châu", "Bắc Yên", "Phù Yên", "Mộc Châu", "Yên Châu", "Mai Sơn", "Sông Mã", "Sốp Cộp", "Vân Hồ"]},
+    {"name": "Tây Ninh", "aliases": ["tây ninh", "tay ninh"], "districts": ["Tây Ninh", "Tân Biên", "Tân Châu", "Dương Minh Châu", "Châu Thành", "Hòa Thành", "Gò Dầu", "Bến Cầu", "Trảng Bàng"]},
+    {"name": "Thái Bình", "aliases": ["thái bình", "thai binh"], "districts": ["Thái Bình", "Quỳnh Phụ", "Hưng Hà", "Đông Hưng", "Thái Thụy", "Tiền Hải", "Kiến Xương", "Vũ Thư"]},
+    {"name": "Thái Nguyên", "aliases": ["thái nguyên", "thai nguyen"], "districts": ["Thái Nguyên", "Sông Công", "Định Hóa", "Phú Lương", "Đồng Hỷ", "Võ Nhai", "Đại Từ", "Phổ Yên", "Phú Bình"]},
+    {"name": "Thanh Hóa", "aliases": ["thanh hóa", "thanh hoa"], "districts": ["Thanh Hóa", "Bỉm Sơn", "Sầm Sơn", "Mường Lát", "Quan Hóa", "Bá Thước", "Quan Sơn", "Lang Chánh", "Ngọc Lặc", "Cẩm Thủy", "Thạch Thành", "Hà Trung", "Vĩnh Lộc", "Yên Định", "Thọ Xuân", "Thường Xuân", "Triệu Sơn", "Thiệu Hóa", "Hoằng Hóa", "Hậu Lộc", "Nga Sơn", "Như Xuân", "Như Thanh", "Nông Cống", "Đông Sơn", "Quảng Xương", "Nghi Sơn"]},
+    {"name": "Thừa Thiên Huế", "aliases": ["thừa thiên huế", "thua thien hue", "huế", "hue"], "districts": ["Huế", "Phong Điền", "Quảng Điền", "Phú Vang", "Hương Thủy", "Hương Trà", "A Lưới", "Phú Lộc", "Nam Đông"]},
+    {"name": "Tiền Giang", "aliases": ["tiền giang", "tien giang", "mỹ tho"], "districts": ["Mỹ Tho", "Gò Công", "Cái Bè", "Cai Lậy", "Châu Thành", "Chợ Gạo", "Gò Công Tây", "Gò Công Đông", "Tân Phước", "Tân Phú Đông"]},
+    {"name": "Trà Vinh", "aliases": ["trà vinh", "tra vinh"], "districts": ["Trà Vinh", "Càng Long", "Cầu Kè", "Tiểu Cần", "Châu Thành", "Cầu Ngang", "Trà Cú", "Duyên Hải"]},
+    {"name": "Tuyên Quang", "aliases": ["tuyên quang", "tuyen quang"], "districts": ["Tuyên Quang", "Lâm Bình", "Nà Hang", "Chiêm Hóa", "Hàm Yên", "Yên Sơn", "Sơn Dương"]},
+    {"name": "Vĩnh Long", "aliases": ["vĩnh long", "vinh long"], "districts": ["Vĩnh Long", "Long Hồ", "Mang Thít", "Vũng Liêm", "Tam Bình", "Bình Minh", "Trà Ôn", "Bình Tân"]},
+    {"name": "Vĩnh Phúc", "aliases": ["vĩnh phúc", "vinh phuc", "vĩnh yên"], "districts": ["Vĩnh Yên", "Phúc Yên", "Lập Thạch", "Tam Dương", "Tam Đảo", "Bình Xuyên", "Yên Lạc", "Vĩnh Tường", "Sông Lô"]},
+    {"name": "Yên Bái", "aliases": ["yên bái", "yen bai"], "districts": ["Yên Bái", "Nghĩa Lộ", "Lục Yên", "Văn Yên", "Mù Căng Chải", "Trấn Yên", "Trạm Tấu", "Văn Chấn", "Yên Bình"]}
+  ],
+  "district_prefixes": ["quận", "huyện", "thị xã", "tx.", "tx", "thành phố", "tp.", "tp"],
+  "ward_prefixes": ["phường", "xã", "thị trấn", "p.", "p", "x.", "tt.", "tt"],
+  "street_prefixes": ["đường", "phố", "đại lộ", "quốc lộ", "ql.", "ql", "tỉnh lộ", "tl.", "tl", "cao tốc", "hẻm", "ngõ", "ngách"],
+  "poi_prefixes": ["chợ", "bệnh viện", "bv", "trường đại học", "trường thpt", "trường thcs", "trường tiểu học", "trường", "sân bay", "cảng hàng không", "cảng", "toà nhà", "tòa nhà", "landmark", "công viên", "ga", "cầu"]
+}

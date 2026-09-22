@@ -1,7 +1,7 @@
 # TASK-024 — Geocoding Adapter & Spatial Resolution Service
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

@@ -1,7 +1,7 @@
 # TASK-018 — Article Deduplication Engine
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -76,10 +76,10 @@ Implement the multi-stage article deduplication engine that identifies and suppr
 - `tests/integration/test_dedup_queries.py`
 
 ## Acceptance Criteria
-- [ ] Tiered deduplication logic strictly follows the 3-level order.
-- [ ] Duplicate articles are recognized and suppressed before triggering downstream extraction.
-- [ ] Articles with matching content hashes or canonical URLs are correctly resolved to the existing article ID.
-- [ ] Cross-source articles on the same event are preserved for the clustering pipeline.
+- [x] Tiered deduplication logic strictly follows the 3-level order.
+- [x] Duplicate articles are recognized and suppressed before triggering downstream extraction.
+- [x] Articles with matching content hashes or canonical URLs are correctly resolved to the existing article ID.
+- [x] Cross-source articles on the same event are preserved for the clustering pipeline.
 
 ## Completion Report
 When completed, report:

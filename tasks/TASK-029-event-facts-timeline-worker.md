@@ -1,7 +1,7 @@
 # TASK-029 — Event Facts & Timeline Extraction Worker
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

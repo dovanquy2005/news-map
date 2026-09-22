@@ -1,0 +1,44 @@
+[
+  {
+    "id": "11111111-1111-1111-1111-111111111111",
+    "name": "VnExpress Thời sự",
+    "domain": "vnexpress.net",
+    "source_type": "RSS",
+    "rss_url": "https://vnexpress.net/rss/thoi-su.rss",
+    "parser_type": "RSS",
+    "active": true,
+    "priority": 90,
+    "rate_limit_rpm": 60,
+    "terms_url": "https://vnexpress.net/dieu-khoan-su-dung",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "id": "22222222-2222-2222-2222-222222222222",
+    "name": "Tuổi Trẻ Thời sự",
+    "domain": "tuoitre.vn",
+    "source_type": "RSS",
+    "rss_url": "https://tuoitre.vn/rss/thoi-su.rss",
+    "parser_type": "RSS",
+    "active": true,
+    "priority": 85,
+    "rate_limit_rpm": 60,
+    "terms_url": "https://tuoitre.vn/dieu-khoan-su-dung.htm",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "id": "33333333-3333-3333-3333-333333333333",
+    "name": "Thanh Niên Thời sự",
+    "domain": "thanhnien.vn",
+    "source_type": "RSS",
+    "rss_url": "https://thanhnien.vn/rss/thoi-su.rss",
+    "parser_type": "RSS",
+    "active": true,
+    "priority": 80,
+    "rate_limit_rpm": 60,
+    "terms_url": "https://thanhnien.vn/dieu-khoan-su-dung.htm",
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-01-01T00:00:00Z"
+  }
+]

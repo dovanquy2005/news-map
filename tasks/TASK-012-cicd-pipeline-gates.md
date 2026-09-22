@@ -1,7 +1,7 @@
 # TASK-012 — CI/CD Pipeline & Quality Gates
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -72,10 +72,10 @@ Establish automated Continuous Integration (CI) and deployment readiness workflo
 - `scripts/run_local_ci.sh`
 
 ## Acceptance Criteria
-- [ ] CI workflow executes successfully on clean repository state.
-- [ ] Database integration tests run against ephemeral PostGIS service container in CI runner.
-- [ ] Secret scanning and dependency vulnerability checks execute as automated gates.
-- [ ] PR branch protection rule documentation created in `docs/17-deployment.md`.
+- [x] CI workflow executes successfully on clean repository state.
+- [x] Database integration tests run against ephemeral PostGIS service container in CI runner.
+- [x] Secret scanning and dependency vulnerability checks execute as automated gates.
+- [x] PR branch protection rule documentation created in `docs/17-deployment.md`.
 
 ## Completion Report
 When completed, report:

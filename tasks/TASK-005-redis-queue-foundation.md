@@ -1,7 +1,7 @@
 # TASK-005 — Redis Configuration & Queue Foundation
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -84,10 +84,10 @@ Establish the Redis connection management, caching helper abstractions, and the 
 - `tests/integration/test_queue_foundation.py`
 
 ## Acceptance Criteria
-- [ ] 5 distinct named queues + DLQ are configured and functional.
-- [ ] Standardized job envelope validated with strict schema.
-- [ ] Idempotent enqueue prevents duplicate execution of the same task.
-- [ ] Automated tests pass for job enqueuing, retries, and dead-letter routing.
+- [x] 5 distinct named queues + DLQ are configured and functional.
+- [x] Standardized job envelope validated with strict schema.
+- [x] Idempotent enqueue prevents duplicate execution of the same task.
+- [x] Automated tests pass for job enqueuing, retries, and dead-letter routing.
 
 ## Completion Report
 When completed, report:

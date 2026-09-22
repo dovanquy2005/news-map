@@ -1,7 +1,7 @@
 # TASK-019 — Article Ingestion Worker & Pipeline Integration
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -87,11 +87,11 @@ Assemble and orchestrate the end-to-end asynchronous ingestion pipeline: consume
 - `tests/integration/test_ingestion_pipeline.py`
 
 ## Acceptance Criteria
-- [ ] End-to-end ingestion flow executes successfully from queue trigger to article database persistence.
-- [ ] Deduplication successfully suppresses duplicate articles in real pipeline execution.
-- [ ] Unique articles immediately produce extraction jobs in `extraction_queue`.
-- [ ] Source health statistics update accurately upon completion.
-- [ ] Re-ingestion of the same feed is fully idempotent.
+- [x] End-to-end ingestion flow executes successfully from queue trigger to article database persistence.
+- [x] Deduplication successfully suppresses duplicate articles in real pipeline execution.
+- [x] Unique articles immediately produce extraction jobs in `extraction_queue`.
+- [x] Source health statistics update accurately upon completion.
+- [x] Re-ingestion of the same feed is fully idempotent.
 
 ## Completion Report
 When completed, report:

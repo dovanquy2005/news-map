@@ -1,7 +1,7 @@
 # TASK-011 — Testing Harness & QA Foundation
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -83,10 +83,10 @@ Establish the automated testing infrastructure across backend, workers, and fron
 - `tests/frontend/setup.ts`
 
 ## Acceptance Criteria
-- [ ] Running test command executes test suite without syntax errors or environment conflicts.
-- [ ] Database test fixtures guarantee transactional isolation between tests.
-- [ ] Fixtures provide valid mock entities matching `docs/04-data-architecture.md`.
-- [ ] Code coverage reports generate correctly in terminal and HTML formats.
+- [x] Running test command executes test suite without syntax errors or environment conflicts.
+- [x] Database test fixtures guarantee transactional isolation between tests.
+- [x] Fixtures provide valid mock entities matching `docs/04-data-architecture.md`.
+- [x] Code coverage reports generate correctly in terminal and HTML formats.
 
 ## Completion Report
 When completed, report:

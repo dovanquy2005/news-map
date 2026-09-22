@@ -1,0 +1,308 @@
+/* ==============================================================================
+   Vietnam News Map — Editorial Light Design System & CSS Tokens
+   Strictly complies with docs/08-ui-ux-responsive.md and User Light Theme Directive
+   ============================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import './map.css';
+@import './filters.css';
+@import './feed.css';
+@import './detail.css';
+@import './responsive.css';
+@import './accessibility.css';
+
+:root {
+  /* Color Palette — Refined Editorial Light Theme */
+  --bg-primary: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #ffffff;
+  --bg-surface-subtle: #f1f5f9;
+  --bg-glass: rgba(255, 255, 255, 0.88);
+  --bg-glass-card: rgba(255, 255, 255, 0.94);
+  --bg-overlay: rgba(15, 23, 42, 0.45);
+
+  --border-subtle: #e2e8f0;
+  --border-medium: #cbd5e1;
+  --border-focus: #2563eb;
+  --border-glass: rgba(226, 232, 240, 0.8);
+
+  --text-primary: #0f172a;       /* Slate 900 - high contrast, crisp readability */
+  --text-secondary: #334155;     /* Slate 700 - editorial body */
+  --text-muted: #64748b;         /* Slate 500 - captions and metadata */
+  --text-tertiary: #94a3b8;      /* Slate 400 - placeholders */
+  --text-on-accent: #ffffff;
+
+  /* Brand Accents — Vietnam Executive Palette */
+  --brand-navy: #1e3a8a;
+  --brand-blue: #2563eb;
+  --brand-blue-hover: #1d4ed8;
+  --brand-blue-subtle: #eff6ff;
+  --brand-red: #dc2626;          /* Vietnam Flag Red Accent */
+  --brand-gold: #d97706;         /* Star Gold Accent */
+
+  /* Category Thematic Accents (Light-mode badges with soft tinted bg & crisp borders) */
+  --cat-fire-text: #b91c1c;
+  --cat-fire-bg: #fef2f2;
+  --cat-fire-border: #fecaca;
+  --cat-fire-pin: #ef4444;
+
+  --cat-accident-text: #c2410c;
+  --cat-accident-bg: #fff7ed;
+  --cat-accident-border: #fed7aa;
+  --cat-accident-pin: #f97316;
+
+  --cat-weather-text: #0369a1;
+  --cat-weather-bg: #f0f9ff;
+  --cat-weather-border: #bae6fd;
+  --cat-weather-pin: #0ea5e9;
+
+  --cat-traffic-text: #b45309;
+  --cat-traffic-bg: #fffbeb;
+  --cat-traffic-border: #fde68a;
+  --cat-traffic-pin: #f59e0b;
+
+  --cat-security-text: #6d28d9;
+  --cat-security-bg: #faf5ff;
+  --cat-security-border: #ddd6fe;
+  --cat-security-pin: #8b5cf6;
+
+  --cat-health-text: #047857;
+  --cat-health-bg: #ecfdf5;
+  --cat-health-border: #a7f3d0;
+  --cat-health-pin: #10b981;
+
+  --cat-other-text: #475569;
+  --cat-other-bg: #f8fafc;
+  --cat-other-border: #e2e8f0;
+  --cat-other-pin: #64748b;
+
+  /* Status Colors */
+  --status-active: #059669;
+  --status-active-bg: #ecfdf5;
+  --status-active-border: #a7f3d0;
+
+  --status-verified: #2563eb;
+  --status-verified-bg: #eff6ff;
+  --status-verified-border: #bfdbfe;
+
+  --status-resolved: #64748b;
+  --status-resolved-bg: #f1f5f9;
+  --status-resolved-border: #e2e8f0;
+
+  --status-disputed: #d97706;
+  --status-disputed-bg: #fffbeb;
+  --status-disputed-border: #fde68a;
+
+  /* Typography */
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.8125rem;   /* 13px */
+  --text-base: 0.875rem;  /* 14px */
+  --text-md: 0.9375rem;   /* 15px */
+  --text-lg: 1rem;        /* 16px */
+  --text-xl: 1.125rem;    /* 18px */
+  --text-2xl: 1.375rem;   /* 22px */
+  --text-3xl: 1.625rem;   /* 26px */
+
+  /* Dimensions */
+  --header-height: 60px;
+  --side-panel-width: 440px;
+  --detail-panel-width: 480px;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Soft Multi-Layer Shadows (Light Theme) */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+  --shadow-sheet: 0 -8px 30px rgba(0, 0, 0, 0.12);
+  --shadow-popup: 0 12px 28px rgba(15, 23, 42, 0.14), 0 4px 8px rgba(15, 23, 42, 0.06);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Base Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Buttons and Interactive Elements */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+  transition: all var(--transition-fast);
+}
+
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* App Header */
+.header-bar {
+  height: var(--header-height);
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  gap: 16px;
+  z-index: 50;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.brand-flag-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 2px 6px rgba(220, 38, 38, 0.35);
+  font-size: 1.1rem;
+}
+
+.brand-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-size: var(--text-md);
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.brand-tagline {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.brand-pill {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: var(--radius-full);
+  background: var(--brand-blue-subtle);
+  color: var(--brand-blue);
+  border: 1px solid #bfdbfe;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Master Layout */
+.app-layout {
+  flex: 1;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - var(--header-height));
+  width: 100%;
+}
+
+.map-viewport {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background-color: #f1f5f9;
+}
+
+/* Animations */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideInUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
+}

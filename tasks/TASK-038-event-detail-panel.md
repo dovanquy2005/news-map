@@ -1,7 +1,7 @@
 # TASK-038 — Event Detail Panel Component
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0

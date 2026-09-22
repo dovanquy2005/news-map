@@ -1,0 +1,30 @@
+[
+  {
+    "id": "aaaaaaa1-1111-1111-1111-111111111111",
+    "source_id": "11111111-1111-1111-1111-111111111111",
+    "url": "https://vnexpress.net/khoi-cong-tuyen-duong-sat-do-thi-so-2-ha-noi-4800000.html?utm_source=rss&utm_medium=feed",
+    "canonical_url": "https://vnexpress.net/khoi-cong-tuyen-duong-sat-do-thi-so-2-ha-noi-4800000.html",
+    "title": "Khởi công tuyến đường sắt đô thị số 2 Hà Nội",
+    "summary_raw": "<p>Sáng nay, dự án tuyến metro số 2 Nam Thăng Long - Trần Hưng Đạo chính thức khởi công tại Hà Nội.</p>",
+    "content_excerpt": "Sáng nay, dự án tuyến metro số 2 Nam Thăng Long - Trần Hưng Đạo chính thức khởi công tại Hà Nội. Dự án có tổng chiều dài 11,5 km gồm 8,9 km đi ngầm và 2,6 km đi trên cao.",
+    "content_hash": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2",
+    "published_at": "2026-03-15T08:30:00Z",
+    "language": "vi",
+    "created_at": "2026-03-15T08:35:00Z",
+    "updated_at": "2026-03-15T08:35:00Z"
+  },
+  {
+    "id": "aaaaaaa2-2222-2222-2222-222222222222",
+    "source_id": "22222222-2222-2222-2222-222222222222",
+    "url": "https://tuoitre.vn/tp-hcm-khanh-thanh-cau-thu-thiem-4-noi-quan-7-202603151000.htm",
+    "canonical_url": "https://tuoitre.vn/tp-hcm-khanh-thanh-cau-thu-thiem-4-noi-quan-7-202603151000.htm",
+    "title": "TP.HCM khánh thành cầu Thủ Thiêm 4 nối Quận 7",
+    "summary_raw": "Cầu Thủ Thiêm 4 dài hơn 2,1km nối Khu đô thị mới Thủ Thiêm với Quận 7 đã chính thức thông xe sáng nay.",
+    "content_excerpt": "Cầu Thủ Thiêm 4 dài hơn 2,1km nối Khu đô thị mới Thủ Thiêm với Quận 7 đã chính thức thông xe sáng nay, giúp giảm tải đáng kể cho cầu Kênh Tẻ và giao lộ Huỳnh Tấn Phát.",
+    "content_hash": "b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3",
+    "published_at": "2026-03-15T10:00:00Z",
+    "language": "vi",
+    "created_at": "2026-03-15T10:05:00Z",
+    "updated_at": "2026-03-15T10:05:00Z"
+  }
+]

@@ -1,7 +1,7 @@
 # TASK-003 — Database Foundation (PostgreSQL + PostGIS + pgvector Setup)
 
 ## Status
-TODO
+DONE
 
 ## Priority
 P0
@@ -77,10 +77,10 @@ Configure the primary database connection, initialize PostgreSQL with required P
 - `tests/integration/test_db_foundation.py`
 
 ## Acceptance Criteria
-- [ ] PostGIS extension is successfully loaded and verified via `SELECT PostGIS_Version()`.
-- [ ] Migration runner successfully applies and rolls back extension migration.
-- [ ] Database connection pool properly handles connection checkout and release.
-- [ ] Automated integration test against live PostgreSQL passes cleanly.
+- [x] PostGIS extension is successfully loaded and verified via `SELECT PostGIS_Version()`.
+- [x] Migration runner successfully applies and rolls back extension migration.
+- [x] Database connection pool properly handles connection checkout and release.
+- [x] Automated integration test against live PostgreSQL passes cleanly.
 
 ## Completion Report
 When completed, report:

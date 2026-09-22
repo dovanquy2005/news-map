@@ -1,0 +1,134 @@
+/* ==============================================================================
+   Vietnam News Map — Map & Marker Styling (Light Theme)
+   Complies with TASK-036 & TASK-035
+   ============================================================================== */
+
+/* Viewport Bounding Box Indicator */
+.viewport-bbox-tag {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  padding: 4px 10px;
+  background: var(--bg-glass-card);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  box-shadow: var(--shadow-sm);
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Offline Interactive Fallback Map Canvas */
+.offline-canvas-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at 50% 50%, #f1f5f9 0%, #e2e8f0 100%);
+  overflow: hidden;
+}
+
+.offline-watermark {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  box-shadow: var(--shadow-sm);
+  z-index: 5;
+}
+
+.offline-watermark-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+.offline-interactive-stage {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Custom Pin Styling */
+.news-map-marker-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  position: relative;
+}
+
+.news-map-marker-pin:hover,
+.news-map-marker-pin:focus-visible,
+.news-map-marker-pin.active {
+  transform: rotate(-45deg) scale(1.18);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  z-index: 30 !important;
+}
+
+.news-map-marker-icon {
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* Approximate Location Aura / Dashed Ring */
+.news-map-marker-pin.approximate::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: inherit;
+  border: 2px dashed rgba(239, 68, 68, 0.6);
+  animation: pulseSubtle 2.5s infinite;
+  pointer-events: none;
+}
+
+/* Cluster Bubble Styling */
+.news-map-cluster-bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 44px;
+  padding: 0 8px;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  border-radius: var(--radius-full);
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  user-select: none;
+}
+
+.news-map-cluster-bubble:hover,
+.news-map-cluster-bubble:focus-visible {
+  transform: scale(1.12);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+  z-index: 30;
+}
